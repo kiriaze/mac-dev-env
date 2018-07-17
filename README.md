@@ -169,17 +169,10 @@ SequelPro is installed via apps.sh if you're running the init.sh script with a f
 2. `import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)`
 
 #### ST3 Packages
-1. theme-default
-1. brogrammer
+1. material
 1. sidebar-enhnacemnets
-1. tabs-extra
-1. alignment
 1. emmet
 1. sass/scss
-1. docblocker
-1. editorconfig
-1. html-css-js-prettify
-1. markdown
 
 
 ### Local OSX LEMP/LAMP Environment
@@ -200,4 +193,4 @@ More on this later...for now use docker.
 
 Include usage of MongoDB, Reddis, PostgreSQL.
 
-Consider dot files or a workaround for symlinking ( although osx deletes it on upgrade ) the httpd.conf file and others for local setup to prevent overwriting on OS upgrades - like el capitain..
+Consider dot files or a workaround for symlinking ( although osx deletes it on upgrade ) the httpd.conf file and others for local setup to prevent overwriting on OS upgrade.
