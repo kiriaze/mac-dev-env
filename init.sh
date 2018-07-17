@@ -483,6 +483,10 @@ pretty_print "Installing launchrocket to manage your homebrew formulas like a ch
 pretty_print "Installing apps..."
   sh apps.sh
 
+# install adove creative cloud app from cask install
+pretty_print "Adobe Creative Cloud - cask requires to run the installer again"
+  open /usr/local/Caskroom/adobe-creative-cloud/latest/Creative Cloud Installer.app
+
 # when done with cask
 brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
 

@@ -16,6 +16,7 @@ apps=(
   flux
   iterm2
   keka
+  launchrocket
   macdown
   moom
   namechanger
